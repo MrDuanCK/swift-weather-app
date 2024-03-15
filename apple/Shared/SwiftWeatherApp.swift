@@ -11,7 +11,7 @@ import WeatherCore
 @main
 struct SwiftWeatherApp: App, LocationWeatherViewModelDelegate, LocationSearchDelegate {
 
-    let container = WeatherCoreContainer(basePath: Bundle.main.bundlePath)
+    let container = WeatherCoreContainer(basePath: Bundle.main.bundlePath, apiKey: "")
     
     var weatherViewModel: LocationWeatherViewModel?
     var searchViewModel: LocationSearchViewModel?
